@@ -1,5 +1,15 @@
 Revision history for Perl extension DBD::SQLite2.
 
+0.37 2015-12-08 rurban
+    - Fix handling of 64bit int and double result types [cpan #28448].
+      We promote now overlong integers to double, not strings.
+      sqlite_set_result_double() was never used.
+    - Add LICENSE for t/98_kwalitee.t (only specified in EUMM rule)
+    - Add CONFIGURE_REQUIRES => DBI [cpan #110188]
+    - Fix little spelling error [cpan #85437]
+    - Silence void* to int cast warning in func.c
+    - Improve kwalitee test
+
 0.36 2013-04-08 rurban
     - Fix mingw32 off_t redefinition. [cpan #84492]
       Use a private sql_off_t typedef for the sqlite internal off_t type.

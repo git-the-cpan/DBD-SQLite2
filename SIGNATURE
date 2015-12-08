@@ -1,5 +1,5 @@
 This file contains message digests of all files listed in MANIFEST,
-signed via the Module::Signature module, version 0.70.
+signed via the Module::Signature module, version 0.79.
 
 To verify the content in this distribution, first make sure you have
 Module::Signature installed, then type:
@@ -14,12 +14,12 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1
 
-SHA1 63f1e3407a4c766deda62628d41255ae52474cf3 Changes
+SHA1 201184d98d5fb9c8acdc842d6c6b13602ad09ac6 Changes
 SHA1 f88ce9a1b86d7b4cc248c1ec56d26952da55e0f7 MANIFEST
 SHA1 dff4a586999ce3a3cd31d928551c8d443148e23a MANIFEST.SKIP
-SHA1 d68c1f0ded77c13f0668710e888c31cef817e9b8 META.json
-SHA1 6aa791aebe0145bbe93ea1c313290b37351458f2 META.yml
-SHA1 32bb5a1fc2f81411d80c5cc519b7ae132eb62886 Makefile.PL
+SHA1 d67dbd24547c65d358b0c12da415de23753f3b1e META.json
+SHA1 7d838ae65d247cce12454e7424534217bb7722b6 META.yml
+SHA1 65055bfe8a7f6ff00d50b1ced66301258e242c68 Makefile.PL
 SHA1 1675bd10f5f5d4e0f9c58a5466ddc7f7f1e35c87 README
 SHA1 c9b5324d791cff4197dcf3920f3c835f573fd2f6 SQLite2.xs
 SHA1 4ad8de8eb7696c0a1817345ce16a1995eb37fe52 SQLiteXS.h
@@ -31,17 +31,17 @@ SHA1 1a984bc5055be40967f64d4089eee07bf3fdeb59 btree_rb.c
 SHA1 43f103dba9e801a4a3d82ec0baa84b15bb068582 build.c
 SHA1 2cabec9fe92d85d3abef78bae18eb4fdd0781671 copy.c
 SHA1 a9b2b9359ee79f66312f81fd5a03b4542020bb0b date.c
-SHA1 8eb3ff0add0ed2091e491b8e4d004bd44a189b5a dbdimp.c
+SHA1 366559af3ddacbc3ee3566be5a1addc45d55faf3 dbdimp.c
 SHA1 9d92115e2403988db7b955d783e8811717e54fe6 dbdimp.h
 SHA1 99628b7e697d562814f0f72821a85b666ac3f2c2 delete.c
 SHA1 de01b5b351c2dae2b359f4a00b3109afea3d5b7d encode.c
 SHA1 ce56d91850a563524e174bc2081ef1e3ce7bcb1a expr.c
-SHA1 29886447794347849e9a160e972d5d5d751f4d2d func.c
+SHA1 4aaeca2aee14735554b2ea15e5d528630c392e29 func.c
 SHA1 fba4711f23fe0cfb5a99e8943acf2482d8052b22 getsqlite.pl
 SHA1 7edafe1f1dbb880a65c9d9f0b4f2574a4914157a hash.c
 SHA1 9d06f995521f463b93fcdc5cf4cf277479711e02 hash.h
 SHA1 b4e3daa3864e9ce2272187f6133d4ac45fd43aa5 insert.c
-SHA1 b769b93553ecdfd897ae1b8cd3218a91bcdfcb4c lib/DBD/SQLite2.pm
+SHA1 5b6fc6c1e72d0dbab6f69069ce2d52d0b31ddf7a lib/DBD/SQLite2.pm
 SHA1 ddf1714b737c3fa7adf8c1de3403e661b6dcdbc7 main.c
 SHA1 70ba735ff3db323a60b23ead3b11a6be38ae38c2 opcodes.c
 SHA1 ea7104ef30d468ec59d96186f00e79a447395bb6 opcodes.h
@@ -64,7 +64,7 @@ SHA1 7178da1de893b2a7109abfe7bf3ee1d45295d159 t/03insert.t
 SHA1 3cc6b439017e955937222442f14ff316e246933b t/04select.t
 SHA1 523650c4c08d6c8ef23fe4d611afebd8768cab6d t/05tran.t
 SHA1 07c0a71d20dd8ff35d598d4e6cddc2526d229e7d t/06error.t
-SHA1 6a0e63801e4e4783296a08fbaa28fa426e29a70d t/08create_function.t
+SHA1 b1ebae00817471a2c91bdcee490484aad160ef01 t/08create_function.t
 SHA1 58fa7f0815083da769a69b2cef7555d66c7f14af t/09create_aggregate.t
 SHA1 2b7d78dcd4b45b9228a4bfb579bc3fc6905ebfd8 t/10dsnlist.t
 SHA1 5ae9ceafe76b33ebce9052a9e66f625d16430208 t/20createdrop.t
@@ -78,7 +78,7 @@ SHA1 6261383a438b01d33739e241ccab714a6f027f0a t/50chopblanks.t
 SHA1 29f6c0b427ca2183336c8bf6405aade7bfe60c12 t/50commit.t
 SHA1 6ab8a8d31b4d2f8acaf11ff3bd32423df3c3abb8 t/60metadata.t
 SHA1 4ebb509d199772289d17a4891d47637a14600447 t/90cppcomments.t
-SHA1 a68085c94808f024eb2ed76ce73ea439f0ed6d48 t/98_kwalitee.t
+SHA1 1fd17c3b0701204d5c79f31c4d9cffe2d2139637 t/98_kwalitee.t
 SHA1 993b3cef8c06a70d99829facf76140864eb57240 t/98_meta.t
 SHA1 1ce51bd4ebcb568ddd166c32d5dbb57ff2d0b515 t/98_perl_minimum_version.t
 SHA1 26d0ef8e1ecbdb18011dc2947a91abbf2397dc0c t/98_pod-coverage.t
@@ -100,9 +100,9 @@ SHA1 b40ff02ce39fd076e6ff3369e19c1bbfe1986682 vdbeInt.h
 SHA1 14ff0eb6ed9d5998f927433c91b0a3d13d81f4f6 vdbeaux.c
 SHA1 1e5e2f6cd32cf312698df052332dc63278c31f58 where.c
 -----BEGIN PGP SIGNATURE-----
-Version: GnuPG v1.4.12 (GNU/Linux)
+Version: GnuPG v1
 
-iEYEARECAAYFAlFi3TcACgkQmm2SYo/9yUJVPQCfb+RA9o66gz1KAvWF8/xhSU2j
-kKkAmwRvpBkHqJR9MArZGQJgDE9ctpg6
-=YBlf
+iEYEARECAAYFAlZm6OcACgkQmm2SYo/9yUIQ7gCfaLRF11zCEVT59pIRhXYJ47Zn
+rx4AoJTY5g1fQFloxHBONBZyovQYoR81
+=8jll
 -----END PGP SIGNATURE-----
